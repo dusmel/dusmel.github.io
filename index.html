@@ -259,8 +259,6 @@
                                     <li class="active" data-target="#slide3" data-slide-to="0"></li>
                                     <li class="" data-target="#slide3" data-slide-to="1"></li>
                                     <li class="" data-target="#slide3" data-slide-to="2"></li>
-                                    <li class="" data-target="#slide3" data-slide-to="3"></li>
-                                    <li class="" data-target="#slide3" data-slide-to="4"></li>
                                   </ol>
                                   <div class="carousel-inner" role="listbox">
                                     <div class="carousel-item active">
@@ -270,13 +268,7 @@
                                       <img src="img/mockup/fs1.png" alt="" class="w-75 img-fluid">
                                     </div>
                                     <div class="carousel-item">
-                                      <img src="img/mockup/fs2.png" alt="" class="w-75 img-fluid">
-                                    </div>
-                                    <div class="carousel-item">
                                       <img src="img/mockup/fs3.png" alt="" class="w-75 img-fluid">
-                                    </div>
-                                    <div class="carousel-item">
-                                      <img src="img/mockup/fs2.png" alt="" class="w-75 img-fluid">
                                     </div>
                                   </div>
 
@@ -393,7 +385,7 @@
           <div class="col-md-4">
             <div class="card shadow">
               <div class="card-body">
-                <img src="img/mockup/ir0.png" alt="" class="img-fluid ">
+                <img src="img/mockup/ir1.png" alt="" class="img-fluid ">
                 <h4 class="card-title">Irengere App</h4>
                 <p class="text-muted">Android App</p>
                 <p class="card-text">Irengere is an app that is able to monitor the patient vital signs (blood pressure and sugar level) and send them continuously to the doctor's android phone device. The system enables multiple patients to be connected to the same doctor.</p>
@@ -421,8 +413,6 @@
                                     <li class="active" data-target="#slide5" data-slide-to="0"></li>
                                     <li class="" data-target="#slide5" data-slide-to="1"></li>
                                     <li class="" data-target="#slide5" data-slide-to="2"></li>
-                                    <li class="" data-target="#slide5" data-slide-to="3"></li>
-                                    <li class="" data-target="#slide5" data-slide-to="4"></li>
                                   </ol>
                                   <div class="carousel-inner" role="listbox">
                                     <div class="carousel-item active">
@@ -433,12 +423,6 @@
                                     </div>
                                     <div class="carousel-item">
                                       <img src="img/mockup/ir2.png" alt="" class="w-75 img-fluid">
-                                    </div>
-                                    <div class="carousel-item">
-                                      <img src="img/mockup/ir0.png" alt="" class="w-75 img-fluid">
-                                    </div>
-                                    <div class="carousel-item">
-                                      <img src="img/mockup/ir1.png" alt="" class="w-75 img-fluid">
                                     </div>
                                   </div>
 
@@ -671,24 +655,24 @@
               </div>
             </div>
 
-            <div class="col-8 col-md-4 mt-3 ml-4 ml-md-0">
+            <form method="post" action="send_mail.php" class="col-8 col-md-4 mt-3 ml-4 ml-md-0">
               <h3 class="my-3 text-center">Ask Anything</h3>
               <div class="input-group input-group-sm ">
                 <span class="input-group-addon px-2 width-20 "><i class="fa fa-user"></i></span>
-                <input type="text" placeholder="Name" class="form-control">
+                <input type="text" placeholder="Name" name="'names'" class="form-control">
               </div>
               <div class="input-group my-2 input-group-sm ">
                 <span class="input-group-addon px-2"><i class="fa fa-envelope"></i></span>
-                <input type="text" placeholder="Email" class="form-control">
+                <input type="text" placeholder="Email" name="email" class="form-control">
               </div>
               <div class="">
-                <textarea  rows="5" cols="80" placeholder="Type your message..." class="form-control sd"></textarea>
+                <textarea  rows="5" cols="80" placeholder="Type your message..." name="message" class="form-control sd"></textarea>
               </div>
               <button type="submit" name="button" class="btn btn-primary my-3 btn-radius btn-block">
                 <span class="float-left"><i class="fa fa-send"></i></span>
                 <span class="comfortaa">Send</span>
               </button>
-            </div>
+            </form>
 
             <div class="col-md-7">
               <div class="row">
