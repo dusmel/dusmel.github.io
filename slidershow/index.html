@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Slidershow</title>
+  <link rel="shortcut icon" type="image/png" href="../img/logo.png"/>
+  <link rel="stylesheet" href="../css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../navbar-fixed.css">
+
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa|Montserrat|Open+Sans|Satisfy" rel="stylesheet">
+
+  <!-- ------------------------ -->
+
+  <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-10 mx-auto">
+          <h4 class="h4 text-muted mt-4">slider with controls and  indicators</h2>
+          <br>
+
+          <div class="carousel slide mb-5" id="slide3" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li class="active" data-target="#slide3" data-slide-to="0"></li>
+              <li data-target="#slide3" data-slide-to="1"></li>
+              <li data-target="#slide3" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active">
+              <img class="d-block img-fluid" src="img/img1.jpeg" alt="first slide">
+              </div>
+              <div class="carousel-item ">
+              <img class="d-block img-fluid" src="img/img2.jpeg" alt="first slide">
+              </div>
+              <div class="carousel-item ">
+              <img class="d-block img-fluid" src="img/img3.jpeg" alt="first slide">
+              </div>
+            </div>
+            <a href="#slide3" class="carousel-control-prev" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a href="#slide3" class="carousel-control-next" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-10 mx-auto">
+          <!-- ########## slider with caption on md screen ########## -->
+
+            <h4 class="h4 text-muted mt-4">slider with capion</h2>
+            <br>
+
+            <div class="carousel slide mb-5" id="slide4" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li class="active" data-target="#slide4" data-slide-to="0"></li>
+                <li data-target="#slide4" data-slide-to="1"></li>
+                <li data-target="#slide4" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                <img class="d-block img-fluid" src="img/img4.jpeg" alt="first slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Header one</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, iure!</p>
+                </div>
+                </div>
+                <div class="carousel-item ">
+                <img class="d-block img-fluid" src="img/img7.jpeg" alt="first slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Header two</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, iure!</p>
+                </div>
+                </div>
+                <div class="carousel-item ">
+                <img class="d-block img-fluid" src="img/img6.jpeg" alt="first slide">
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Header three</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, iure!</p>
+                </div>
+                </div>
+              </div>
+              <a href="#slide4" class="carousel-control-prev" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a href="#slide4" class="carousel-control-next" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+            </div>
+        </div>
+      </div>
+
+
+      <h4 class="h5 text-muted  mt-4">NB:Quand tu mets le curseur sur la photo le slider va se mettre sur pause</h2>
+      <br>
+
+    </div>
+
+
+
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $('.carousel').carousel({
+          interval:2000,
+          keyboard: true,
+          pause:'hover',
+          wrap:true
+        });
+    </script>
+  </body>
+</html>
