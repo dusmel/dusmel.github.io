@@ -1,401 +1,411 @@
-$ft-color: #2C2C2C;
-$bg-color: #F4F6F7;
-$color-pri: #34495E;
-$color-sec: #ff6700;
-$color-grey: #f5f5f5;
-$text-size: 14px;
-$text-sm-size: 13px;
-$l-height: 17px;
-$ico-size: 28px;
-$ico-md-size: 20px;
-$font-pri: 'Montserrat', sans-serif;
-$font-sec: 'Comfortaa', cursive;
-$font-open: 'Open Sans', sans-serif;
-
-
-
-$shadow: 0 8px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
-
-// @font-face {
-//     font-family: comfortaa;
-//     src: url(../fonts/Comfortaa-Regular.ttf);
-// }
-// @font-face {
-//     font-family: montserrat;
-//     src: url(../fonts/Montserrat-Regular.ttf);
-// }
 @font-face {
-    font-family: bariol;
-    src: url(../fonts/bariol-regular.ttf);
+  font-family: bariol;
+  src: url(../fonts/bariol-regular.ttf);
 }
 
 
-// ##################################################################
+//test
 
-  // my pre-setting
-
-  .shadow{
-    box-shadow: $shadow;
-  }
-
-  .btn-radius{
-    border-radius: 8px;
-  }
-
-  .comfortaa{
-    font-family: Comfortaa;
-  }
-
-
-// ################################################################
-body{
-  color: $ft-color;
-  background-color: $color-grey;
-  font-family: $font-pri;
-
-  .btn{
-    border-radius: 8px;
-  }
-
-// UP BUTTON
-  .up{
-  font-size: 30px;
-  color: #66666E;
-  box-shadow: 0 8px 11px 0 rgba(255,103,0,0.25), 0 4px 15px 0 rgba(255,103,0,0.15);
-  background-color: #F8F9F9;
+@font-face {
+  font-family: nickainley;
+  src: url(../fonts/Nickainley-Normal.otf);
 }
 
-// navbar
 
-  .navbar{
+.shadow {
+  box-shadow: 0 8px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+}
 
+.btn-radius {
+  border-radius: 8px;
+}
+
+.comfortaa {
+  font-family: Comfortaa;
+}
+
+.ico-md-size {
+  font-size: 15px;
+}
+
+.h-200 {
+  height: 40px;
+}
+
+.display-5 {
+  font-size: 60px;
+}
+
+.bg-transparente {
+  background-color: rgba(100, 100, 100, 0.9);
+}
+
+body {
+  color: #2C2C2C;
+  background-color: #f5f5f5;
+  font-family: "Montserrat", sans-serif;
+  .btn {
+    border-radius: 8px;
+  }
+  .up {
+    font-size: 30px;
+    color: #66666E;
+    box-shadow: 0 8px 11px 0 rgba(255, 103, 0, 0.25), 0 4px 15px 0 rgba(255, 103, 0, 0.15);
+    background-color: #F8F9F9;
+  }
+  .navbar {
     background: #F0F3F4;
-    box-shadow: 0 10px 30px rgba(50, 50, 93, 0.1), 0 2px 3px rgba(0,0,0,0.07);
+    box-shadow: 0 10px 30px rgba(50, 50, 93, 0.1), 0 2px 3px rgba(0, 0, 0, 0.07);
     transition: top 0.2s ease-in-out;
-
-
-
-    .navbar-brand{
+    .navbar-brand {
       font-size: 33px;
-      font-family: $font-sec;
+      font-family: "Comfortaa", cursive;
       font-weight: 900;
       letter-spacing: -1px;
-
-      span{
+      span {
         color: #34495E;
-        font-size: 35px;;
+        font-size: 35px;
         font-weight: 40px;
       }
-      .dash{
-        color: $color-sec;
+      .dash {
+        color: #ff6700;
       }
     }
-
-    .fa{
+    .fa {
       color: #788195;
-      font-size: 25px;;
+      font-size: 25px;
     }
-
-    .nav-link{
+    .nav-link {
       color: #788195;
-      font-size: $text-size;
-      font-family: $font-pri;
+      font-size: 14px;
+      font-family: "Montserrat", sans-serif;
       line-height: 24px;
       font-weight: 500;
-
+      &:hover {
+        color: #353434;
+        font-size: 14px;
+        font-family: "Montserrat", sans-serif;
+        line-height: 24px;
+        font-weight: 600;
+      }
     }
-
-    .nav-link:hover{
+    .active {
       color: #353434;
-      font-size: $text-size;
-      font-family: $font-pri;
-      line-height: 24px;
-      font-weight: 600;
-    }
-
-    .active{
-      color: #353434;
-      font-size: $text-size;
-      font-family: $font-pri;
+      font-size: 14px;
+      font-family: "Montserrat", sans-serif;
       line-height: 24px;
       font-weight: 700;
-      border-bottom: 2px solid $color-sec;
+      border-bottom: 2px solid #ff6700;
     }
   }
-
-  // showcase
-
-  #showcase{
-
+  #showcase {
     min-height: 600px;
     background: url("../img/showcase.jpeg") no-repeat;
     background-size: cover;
     left: 0;
     top: 0;
-
-    .display-txt{
+    .display-txt {
       font-size: 60px !important;
       line-height: 50px !important;
       font-weight: 900;
       letter-spacing: -2px;
-      color: $ft-color;
-
+      color: #2C2C2C;
     }
-
-    .navbar-brand{
-      font-family: $font-sec;
+    .navbar-brand {
+      font-family: "Comfortaa", cursive;
       font-weight: 40px;
       letter-spacing: -1px;
       color: #34495E;
       font-size: 40px;
-      }
-
-
-
-    h5{
-
+    }
+    h5 {
       font-size: 19px;
       font-weight: 100;
       letter-spacing: -1px;
       line-height: 25px;
-
     }
-
-    .col-sm-5{
+    .col-sm-5 {
       margin-right: 100px;
-
-      .btn{
+      .btn {
         border-radius: 5px;
-        background: $color-sec;
+        background: #ff6700;
         color: white;
-        font-size: $text-size;
-      }
-    }
-
-    @media (max-width: 576px) {
-
-      .row{
-        margin-top: 300px;
-        text-align: center;
-        margin-right: 0;
-        margin-left: 0;
+        font-size: 14px;
       }
     }
   }
-
-
-  #about-sect{
+  #about-sect {
     background: #fff;
-
-
-    .card{
-      box-shadow: $shadow;
-
-      h4{
-        color: $color-pri;
+    .card {
+      box-shadow: 0 8px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+      h4 {
+        color: #34495E;
       }
-
-      .text-muted{
-        font-size: $text-size;
-        border-bottom: 1px solid rgb(200, 200,200);
+      .text-muted {
+        font-size: 14px;
+        border-bottom: 1px solid #c8c8c8;
         padding-bottom: 4px;
       }
-
-      .img-fluid{
-        box-shadow: $shadow;
-
+      .img-fluid {
+        box-shadow: 0 8px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
       }
-
-      .card-text{
-        font-size: $text-size;
+      .card-text {
+        font-size: 14px;
       }
-
-      .fa{
+      .fa {
         font-size: 19px;
         font-weight: 100;
       }
-
-      .modal{
-        .fa{
+      .modal {
+        .fa {
           font-size: 35px;
         }
-
-        .modal-content{
-          background: rgba(240,240,240,0.9);
+        .modal-content {
+          background: rgba(240, 240, 240, 0.9);
+          .download {
+            padding: 3px 6px;
+          }
         }
       }
-
-      .btn{
+      .btn {
         border-radius: 8px;
       }
     }
-
-
   }
-
-
-  //Project
-
-  #project-sect{
-
-
-    h4{
-      color: $color-pri;
+  #project-sect {
+    h4 {
+      color: #34495E;
     }
-
-    .card{
-      .text-muted{
-        font-size: $text-size;
-        border-bottom: 1px solid rgb(200, 200,200);
+    .card {
+      .text-muted {
+        font-size: 14px;
+        border-bottom: 1px solid #c8c8c8;
         padding-bottom: 4px;
       }
-      .card-text{
-        font-size: $text-size;
+      .card-text {
+        font-size: 14px;
       }
-
-      .btn{
+      .btn {
         font-size: 13px;
-
       }
-
-      img{
+      img {
         height: 250px;
       }
-
-      .modal{
-
-        h4{
-          color: $color-pri;
+      .modal {
+        .close {
+          color: white;
+          font-size: 33px;
         }
-
-        .text-sm-size{
-          font-size: $text-sm-size;
+        h4 {
+          color: #F0F3F4;
         }
-
-        .strong{
+        .text-sm-size {
+          font-size: 13px;
+        }
+        .strong {
           font-weight: 900;
-          font-size: $text-sm-size;
-          font-family: $font-open;
+          font-size: 13px;
+          font-family: "Open Sans", sans-serif;
         }
-
-        .carousel{
-
-          img{
+        .carousel {
+          img {
             width: auto;
             height: auto;
           }
-
-          .fa{
-            color: rgb(60, 60, 60);
-            font-size: 35px;;
+          .fa {
+            color: #fafafa;
+            font-size: 35px;
           }
-
         }
       }
     }
-
   }
-
-
-  #contact-sect{
-
+  #contact-sect {
     background: url("../img/footer.jpeg") no-repeat;
     min-height: 400px;
     background-size: cover;
     background-attachment: fixed;
     color: #f8f9fa;
-
-    .dark-overlay{
-      background: rgba(47,47,47,0.8);
+    .dark-overlay {
+      background: rgba(47, 47, 47, 0.8);
       min-height: 400px;
-
-
-      .row{
+      .container-main {
+        width: inherit;
+      }
+      .row {
         min-height: 350px;
-
       }
-      .fa{
-        font-size: 31px;;
-
-
+      .fa {
+        font-size: 31px;
       }
-
-      .fa-twitter{
-        background: $color-grey;
+      .fa-twitter {
+        background: #f5f5f5;
         opacity: 0.6;
         color: #55acee;
         padding-top: 5px;
       }
-
-      .fa-facebook{
-        background: $color-grey;
+      .fa-facebook {
+        background: #f5f5f5;
         opacity: 0.6;
         color: #3b5998;
         padding-top: 5px;
       }
-
-      .fa-github{
-        background: $color-grey;
+      .fa-google-plus {
+        background: #f5f5f5;
         opacity: 0.6;
         color: #dc4a38;
         padding-top: 5px;
       }
-
-      .rounded-ico{
-        // background: white;
+      .rounded-ico {
         min-height: 40px;
         min-width: 40px;
         border-radius: 20px;
         box-shadow: 0 8px 11px 0 rgba(230, 230, 230, 0.18), 0 4px 15px 0 rgba(230, 230, 230, 0.15);
-        // padding: 4px;
-
-
-
       }
-
-      .col-4{
-        background: rgba(50,146,166, 0.6);
-
-        .input-group-addon{
+      .col-8 {
+        background: rgba(50, 146, 166, 0.6);
+        .input-group-addon {
           border-top-left-radius: 16.5px;
           border-bottom-left-radius: 16.5px;
           border-right-color: white;
-
-          .form-control{
+          .form-control {
             border-left-color: white;
           }
-          .fa{
+          .fa {
             font-size: 20px;
           }
         }
-        .width-20{
+        .width-20 {
           width: 37px;
           padding-left: 10px;
         }
-        textarea{
-          font-size: $text-size;
+        textarea {
+          font-size: 14px;
           border: transparent;
           border-bottom: 1px solid #2E2C2B;
           background: #D0D3D4;
           color: black;
-
-        }
-        textarea::placeholder {
+          &::placeholder {
             color: #2E2C2B;
-            opacity: 1; /* Firefox */
+            opacity: 1;
+            /* Firefox */
             font-weight: 500;
-        }
-
-        .btn{
-
-          .fa{
-            font-size: $ico-md-size;
           }
-
+        }
+        .btn .fa {
+          font-size: 20px;
         }
       }
-
+      .col-md-5 {
+        ul {
+          list-style-type: none;
+          padding: 0;
+          li {
+            padding: 0px;
+          }
+        }
+        .fa {
+          font-size: 18px;
+        }
+      }
+      .col-md-4 .navbar-brand {
+        font-size: 33px;
+        font-family: "Comfortaa", cursive;
+        font-weight: 900;
+        letter-spacing: -1px;
+        background: rgba(255, 255, 255, 0.9);
+        color: #34495E;
+        font-size: 35px;
+        font-weight: 40px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-top-left-radius: 30px;
+        .dash {
+          color: #ff6700;
+        }
+      }
+      .col-md-10 {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding-top: 15px;
+        padding-bottom: 3px;
+      }
+      .col-md-11 {
+        margin-top: -35px;
+        font-family: 'Satisfy', cursive;
+        font-size: 20px;
+        .f-quote {
+          background: rgba(255, 255, 255, 0.4);
+        }
+      }
     }
   }
-
 }
+
+@media (max-width: 576px) {
+  body #showcase .row {
+    margin-top: 300px;
+    text-align: center;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  body #project-sect h3 {
+    font-size: 33px;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 576px) {
+  body #contact-sect .dark-overlay {
+    .col-md-5 {
+      padding-left: 70px;
+    }
+    .col-md-4 {
+      margin-top: 60px;
+      margin-bottom: 10px;
+    }
+    .col-md-10 {
+      margin-bottom: 35px;
+      .display-5 {
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+
+
+// ###################  modal sent email ##############################
+  #modalsent{
+    .modal-content{
+      margin-top: 200px;
+      border-radius: 5px;
+    }
+    .close{
+      color: #31a574;
+    }
+    .sent-txt{
+      height: 160px;
+      width: 160px;
+      border: 2px solid #31a574;
+      border-radius: 80px;
+      text-align: center;
+      font-size: 37px;
+      color: #31a574;
+      padding: 20px;
+      margin-bottom: 30px;
+      span{
+        -webkit-animation: swing 1s ease;
+          animation: swing 1s ease;
+          -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+      }
+      .fa{
+        font-size: 40px !important;
+      }
+    }
+  }
+// ########################### end sent email ###########################################

@@ -1,12 +1,9 @@
 @font-face {
   font-family: bariol;
   src: url(../fonts/bariol-regular.ttf); }
-//test
-
 @font-face {
   font-family: nickainley;
   src: url(../fonts/Nickainley-Normal.otf); }
-
 .shadow {
   box-shadow: 0 8px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); }
 
@@ -63,12 +60,12 @@ body {
       font-family: "Montserrat", sans-serif;
       line-height: 24px;
       font-weight: 500; }
-    body .navbar .nav-link:hover {
-      color: #353434;
-      font-size: 14px;
-      font-family: "Montserrat", sans-serif;
-      line-height: 24px;
-      font-weight: 600; }
+      body .navbar .nav-link:hover {
+        color: #353434;
+        font-size: 14px;
+        font-family: "Montserrat", sans-serif;
+        line-height: 24px;
+        font-weight: 600; }
     body .navbar .active {
       color: #353434;
       font-size: 14px;
@@ -106,12 +103,6 @@ body {
         background: #ff6700;
         color: white;
         font-size: 14px; }
-    @media (max-width: 576px) {
-      body #showcase .row {
-        margin-top: 300px;
-        text-align: center;
-        margin-right: 0;
-        margin-left: 0; } }
   body #about-sect {
     background: #fff; }
     body #about-sect .card {
@@ -137,10 +128,6 @@ body {
           padding: 3px 6px; }
       body #about-sect .card .btn {
         border-radius: 8px; }
-  @media (max-width: 576px) {
-    body #project-sect h3 {
-      font-size: 33px;
-      font-weight: 700; } }
   body #project-sect h4 {
     color: #34495E; }
   body #project-sect .card .text-muted {
@@ -224,11 +211,11 @@ body {
           border-bottom: 1px solid #2E2C2B;
           background: #D0D3D4;
           color: black; }
-        body #contact-sect .dark-overlay .col-8 textarea::placeholder {
-          color: #2E2C2B;
-          opacity: 1;
-          /* Firefox */
-          font-weight: 500; }
+          body #contact-sect .dark-overlay .col-8 textarea::placeholder {
+            color: #2E2C2B;
+            opacity: 1;
+            /* Firefox */
+            font-weight: 500; }
         body #contact-sect .dark-overlay .col-8 .btn .fa {
           font-size: 20px; }
       body #contact-sect .dark-overlay .col-md-5 ul {
@@ -263,13 +250,48 @@ body {
         font-size: 20px; }
         body #contact-sect .dark-overlay .col-md-11 .f-quote {
           background: rgba(255, 255, 255, 0.4); }
-      @media (max-width: 576px) {
-        body #contact-sect .dark-overlay .col-md-5 {
-          padding-left: 70px; }
-        body #contact-sect .dark-overlay .col-md-4 {
-          margin-top: 60px;
-          margin-bottom: 10px; }
-        body #contact-sect .dark-overlay .col-md-10 {
-          margin-bottom: 35px; }
-          body #contact-sect .dark-overlay .col-md-10 .display-5 {
-            font-size: 40px; } }
+
+@media (max-width: 576px) {
+  body #showcase .row {
+    margin-top: 300px;
+    text-align: center;
+    margin-right: 0;
+    margin-left: 0; } }
+@media (max-width: 576px) {
+  body #project-sect h3 {
+    font-size: 33px;
+    font-weight: 700; } }
+@media (max-width: 576px) {
+  body #contact-sect .dark-overlay .col-md-5 {
+    padding-left: 70px; }
+  body #contact-sect .dark-overlay .col-md-4 {
+    margin-top: 60px;
+    margin-bottom: 10px; }
+  body #contact-sect .dark-overlay .col-md-10 {
+    margin-bottom: 35px; }
+    body #contact-sect .dark-overlay .col-md-10 .display-5 {
+      font-size: 40px; } }
+#modalsent .modal-content {
+  margin-top: 200px;
+  border-radius: 5px; }
+#modalsent .close {
+  color: #31a574; }
+#modalsent .sent-txt {
+  height: 160px;
+  width: 160px;
+  border: 2px solid #31a574;
+  border-radius: 80px;
+  text-align: center;
+  font-size: 37px;
+  color: #31a574;
+  padding: 20px;
+  margin-bottom: 30px; }
+  #modalsent .sent-txt span {
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1; }
+  #modalsent .sent-txt .fa {
+    font-size: 40px !important; }
+
+/*# sourceMappingURL=style.css.map */

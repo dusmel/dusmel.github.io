@@ -655,11 +655,29 @@
               </div>
             </div>
 
-            <form method="post" action="send_mail.php" class="col-8 col-md-4 mt-3 ml-4 ml-md-0">
+            <div id="modalsent" class="modal fade" tabindex="-1" role="dialog">
+              <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="sent-txt mx-auto ">
+                      Sent
+                      <span><i class="fa fa-check-circle"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <form method="post" action="./sendmail/sendmail.php" class="col-8 col-md-4 mt-3 ml-4 ml-md-0">
               <h3 class="my-3 text-center">Ask Anything</h3>
               <div class="input-group input-group-sm ">
                 <span class="input-group-addon px-2 width-20 "><i class="fa fa-user"></i></span>
-                <input type="text" placeholder="Name" name="'names'" class="form-control">
+                <input type="text" placeholder="Name" name="names" class="form-control">
               </div>
               <div class="input-group my-2 input-group-sm ">
                 <span class="input-group-addon px-2"><i class="fa fa-envelope"></i></span>
@@ -668,7 +686,7 @@
               <div class="">
                 <textarea  rows="5" cols="80" placeholder="Type your message..." name="message" class="form-control sd"></textarea>
               </div>
-              <button type="submit" name="button" class="btn btn-primary my-3 btn-radius btn-block">
+              <button type="submit" name="send_message" class="btn btn-primary my-3 btn-radius btn-block">
                 <span class="float-left"><i class="fa fa-send"></i></span>
                 <span class="comfortaa">Send</span>
               </button>
@@ -717,6 +735,15 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/navbar-fixed.js"></script>
   <script src="js/main.js"></script>
+  <?php if(isset($_POST['sent'])){ ?>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $("#modalsent").modal('show');
+      });
+    </script>
+  <?php } ?>
+
+
 </body>
 
 </html>
