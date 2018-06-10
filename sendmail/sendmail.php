@@ -1,19 +1,22 @@
 <?php
 // Import PHPMailer classes into the global namespace
 // These must be at the top of your script, not inside a function
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+// use PHPMailer\PHPMailer\PHPMailer;
+// use PHPMailer\PHPMailer\Exception;
 
-//Load Composer's autoloader
-require 'vendor/autoload.php';
 
-$mail = new PHPMailer(true);
 
 if (isset($_POST['send_message'])) {
   $name=htmlspecialchars($_POST['names']);
   $email=htmlspecialchars($_POST['email']);
   $message=htmlspecialchars($_POST['message']);
 
+  //Load Composer's autoloader
+  // require 'vendor/autoload.php';
+
+  require ('../PHPMailer/PHPMailerAutoload.php');
+
+  $mail = new PHPMailer(true);
 
 
                                // Passing `true` enables exceptions
